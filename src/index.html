@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopping Cart</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://use.typekit.net/goq1kra.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script>document.documentElement.className = "js";</script>
+  </head>
+
+  <body class="loading">
+    <!-- Carousel -->
+    <section class="carousel">
+      <div class="list">
+        <!-- Item 1 -->
+        <div class="item">
+          <figure>
+            <img
+              src="./images/img/1.png"
+              alt="Air Jordan 1 Retro High OG Chicago"
+            />
+          </figure>
+          <div class="content">
+            <p class="category">Air Jordan 1 “Chicago”</p>
+            <p class="description">
+              The legendary Air Jordan 1 “Chicago” features premium leather and
+              the iconic red, white, and black colorway that started it all in
+              1985.
+            </p>
+            <div class="more">
+              <button>Add To Cart</button>
+              <button><i class="fa-solid fa-play"></i> See More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item">
+          <figure>
+            <img
+              src="./images/img/2.png"
+              alt="Air Jordan 4 University Blue"
+            />
+          </figure>
+          <div class="content">
+            <p class="category">Air Jordan 4 “University Blue”</p>
+            <p class="description">
+              The Air Jordan 4 “University Blue” combines premium suede with
+              classic AJ4 design, inspired by Michael Jordan’s UNC roots.
+            </p>
+            <div class="more">
+              <button>Add To Cart</button>
+              <button><i class="fa-solid fa-play"></i> See More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="item">
+          <figure>
+            <img src="./images/img/3.png" alt="Air Jordan 11 Concord" />
+          </figure>
+          <div class="content">
+            <p class="category">Air Jordan 11 “Concord”</p>
+            <p class="description">
+              A masterpiece of style and performance, the Air Jordan 11
+              “Concord” features patent leather and a sleek black & white design.
+            </p>
+            <div class="more">
+              <button>Add To Cart</button>
+              <button><i class="fa-solid fa-play"></i> See More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <div class="arrows">
+        <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+
+      <!-- Indicators -->
+      <div class="indicators">
+        <div class="number">01</div>
+        <ul>
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+
+		
+
+    <!-- Carousel Script -->
+    <script src="app.js"></script>
+
+    <main class="main-2">
+      <header class="frame">
+        <div class="cart-button">
+          <div class="cart-button__label-wrap">
+            <span class="cart-button__label">Cart</span>
+          </div>
+
+          <div class="cart-button__number-wrap">
+            <span class="cart-button__number-bg"></span>
+            <span class="cart-button__number">0</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="contentt">
+        <div class="products">
+          <ul class="products__list">
+            <!-- Product 01 -->
+            <li
+              class="products__item"
+              data-id="product-01"
+              data-price="15"
+              data-name="Product 01"
+              data-cover="./images/1.webp"
+            >
+              <div class="products__images">
+                <img
+                  class="products__main-image"
+                  src="./images/3.webp"
+                  alt="Product 01"
+                />
+                <div class="products__gallery">
+                  <img
+                    class="products__gallery-item"
+                    src="./images/3.webp"
+                    alt="Product 01 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/3.webp"
+                    alt="Product 01 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/3.webp"
+                    alt="Product 01 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/3.webp"
+                    alt="Product 01 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/3.webp"
+                    alt="Product 01 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/3.webp"
+                    alt="Product 01 gallery"
+                  />
+                </div>
+              </div>
+              <button type="button" class="products__cta button">
+                Add to cart
+              </button>
+            </li>
+
+            <!-- Product 02 -->
+            <li
+              class="products__item"
+              data-id="product-02"
+              data-price="8"
+              data-name="Product 02"
+              data-cover="./images/product-02-cover.jpg"
+            >
+              <div class="products__images">
+                <img
+                  class="products__main-image"
+                  src="./images/product-02-cover.jpg"
+                  alt="Product 02"
+                />
+                <div class="products__gallery">
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-02-cover.jpg"
+                    alt="Product 02 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-02-cover.jpg"
+                    alt="Product 02 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-02-cover.jpg"
+                    alt="Product 02 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-02-cover.jpg"
+                    alt="Product 02 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-02-cover.jpg"
+                    alt="Product 02 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-02-cover.jpg"
+                    alt="Product 02 gallery"
+                  />
+                </div>
+              </div>
+              <button type="button" class="products__cta button">
+                Add to cart
+              </button>
+            </li>
+
+            <!-- Product 03 -->
+            <li
+              class="products__item"
+              data-id="product-03"
+              data-price="12"
+              data-name="Product 03"
+              data-cover="./images/product-03-cover.jpg"
+            >
+              <div class="products__images">
+                <img
+                  class="products__main-image"
+                  src="./images/product-03-cover.jpg"
+                  alt="Product 03"
+                />
+                <div class="products__gallery">
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-03-cover.jpg"
+                    alt="Product 03 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-03-cover.jpg"
+                    alt="Product 03 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-03-cover.jpg"
+                    alt="Product 03 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-03-cover.jpg"
+                    alt="Product 03 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-03-cover.jpg"
+                    alt="Product 03 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-03-cover.jpg"
+                    alt="Product 03 gallery"
+                  />
+                </div>
+              </div>
+              <button type="button" class="products__cta button">
+                Add to cart
+              </button>
+            </li>
+
+            <!-- Product 04 -->
+            <li
+              class="products__item"
+              data-id="product-04"
+              data-price="5"
+              data-name="Product 04"
+              data-cover="./images/product-04-cover.jpg"
+            >
+              <div class="products__images">
+                <img
+                  class="products__main-image"
+                  src="./images/product-04-cover.jpg"
+                  alt="Product 04"
+                />
+                <div class="products__gallery">
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-04-cover.jpg"
+                    alt="Product 04 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-04-cover.jpg"
+                    alt="Product 04 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-04-cover.jpg"
+                    alt="Product 04 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-04-cover.jpg"
+                    alt="Product 04 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-04-cover.jpg"
+                    alt="Product 04 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-04-cover.jpg"
+                    alt="Product 04 gallery"
+                  />
+                </div>
+              </div>
+              <button type="button" class="products__cta button">
+                Add to cart
+              </button>
+            </li>
+
+            <!-- Product 05 -->
+            <li
+              class="products__item"
+              data-id="product-05"
+              data-price="20"
+              data-name="Product 05"
+              data-cover="./images/product-05-cover.jpg"
+            >
+              <div class="products__images">
+                <img
+                  class="products__main-image"
+                  src="./images/product-05-cover.jpg"
+                  alt="Product 05"
+                />
+                <div class="products__gallery">
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-05-cover.jpg"
+                    alt="Product 05 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-05-cover.jpg"
+                    alt="Product 05 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-05-cover.jpg"
+                    alt="Product 05 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-05-cover.jpg"
+                    alt="Product 05 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-05-cover.jpg"
+                    alt="Product 05 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-05-cover.jpg"
+                    alt="Product 05 gallery"
+                  />
+                </div>
+              </div>
+              <button type="button" class="products__cta button">
+                Add to cart
+              </button>
+            </li>
+
+            <!-- Product 06 -->
+            <li
+              class="products__item"
+              data-id="product-06"
+              data-price="8"
+              data-name="Product 06"
+              data-cover="./images/product-06-cover.jpg"
+            >
+              <div class="products__images">
+                <img
+                  class="products__main-image"
+                  src="./images/product-06-cover.jpg"
+                  alt="Product 06"
+                />
+                <div class="products__gallery">
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-06-cover.jpg"
+                    alt="Product 06 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-06-cover.jpg"
+                    alt="Product 06 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-06-cover.jpg"
+                    alt="Product 06 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-06-cover.jpg"
+                    alt="Product 06 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-06-cover.jpg"
+                    alt="Product 06 gallery"
+                  />
+                  <img
+                    class="products__gallery-item"
+                    src="./images/product-06-cover.jpg"
+                    alt="Product 06 gallery"
+                  />
+                </div>
+              </div>
+              <button type="button" class="products__cta button">
+                Add to cart
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Cart -->
+      <aside class="cart">
+        <div class="cart__bg"></div>
+        <div class="cart__inner">
+          <div class="cart__inner-close">X</div>
+          <div class="cart__inner-bg"></div>
+          <div class="cart-items"></div>
+
+          <div class="cart-total cart-grid">
+            <div class="cart-total__inner">
+              <div class="cart-total__label">Total:</div>
+              <div class="cart-total__amount">€ 0</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
